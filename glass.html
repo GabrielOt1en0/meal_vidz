@@ -1,0 +1,204 @@
+<html>
+    <head>
+    <style>
+            * {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+            }
+    body {
+        width: 100%;
+        height: 100%;
+        background: #000000;
+        font-family: 'Noto Sans', sans-serif;
+        background: #0f0c29; 
+        background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29); 
+        background: linear-gradient(to right, #24243e, #302b63, #0f0c29); 
+        }
+    section {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .circle-1 {
+        position: absolute;
+        top: 15%;
+        left: 30%;
+        background: #4776E6;
+        background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);
+        background: linear-gradient(to right, #8E54E9, #4776E6);   
+        height: 550px;
+        width: 550px;
+        border-radius: 50%;
+        animation: bounce 5s linear infinite;
+    }
+    .circle-2{
+        position: absolute;
+        bottom: 5%;
+        right: 35%;
+        background: #bc4e9c;
+        background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);
+        background: linear-gradient(to right, #f80759, #bc4e9c);
+        height: 400px;
+        width: 400px;
+        border-radius: 50%;
+        animation: bounce 4s linear infinite 1s;
+    }
+    .circle-3 {
+        position: absolute;
+        top: 30%;
+        right: 35%;
+        background-color: #FF3CAC;
+        background: #ff9966;
+        background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);
+        background: linear-gradient(to right, #ff5e62, #ff9966);
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        animation: bounce 3s linear infinite 2s;
+    }
+    card{
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    button {
+        background-color: transparent;
+        color: white;
+        padding: 10px 20px;
+        border: 2px solid white;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    /* Card Styling */
+    .card {
+    border-radius: 12px;
+    padding: 16px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .card:hover{
+        transform:translate(-1,1)
+
+    }
+
+    /* Dropdown Container */
+    .dropdown {
+    position: relative;
+    display: inline-block;
+    }
+
+    /* Dropdown Button */
+    .dropdown-btn {
+    background-color: #729bc9;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+
+    /* Hidden Dropdown Menu */
+    .dropdown-content {
+    display: none;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.1);
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+    color: rgb(6, 31, 122);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    }
+
+    /* Hover Effects */
+    .dropdown-content a:hover {
+    background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+    display:inline-block;
+    }
+
+    @keyframes bounce {
+
+
+        0% {
+            transform: translateY(0px);
+        }
+
+
+        25% {
+            transform: translateY(10px);
+        }
+
+
+        50% {
+            transform: translateY(0px);
+        }
+
+
+        75% {
+            transform: translateY(-10px);
+        }
+
+
+        100% {
+            transform: translateY(0px);
+        }
+        
+
+ }
+
+        </style>
+    </head>
+    <body>
+        <div class="circle-1"></div>
+        <div class="circle-2"></div>
+        <div class="circle-3"></div>
+        
+        <section>
+            
+            <div class="card">
+                <h1 style="color: white; text-align: center; padding: 20px;">Welcome!</h1>
+                <div class="dropdown">
+                    <button class="dropdown-btn">Duration</button>
+                    <div class="dropdown-content">
+                        <a href="#">5-15 mins</a>
+                        <a href="#">15-20 mins</a>
+                        <a href="#">20 mins+</a>                   
+                    </div>
+                <div class="dropdown">    
+                    <button class="dropdown-btn">Genre</button>
+                    <div class="dropdown-content">
+                        <a href="#">Gaming</a>
+                        <a href="#">Food</a>
+                        <a href="#">Video essay</a>
+                        <a href="#">Audio commentary</a>
+                        <a href="#">Podcast</a>
+                    </div>
+                </div>
+                </div>
+                <button >Search</button>
+            </div>
+            
+        </section>
+        
+           
+        
+    </body>
+</html>
